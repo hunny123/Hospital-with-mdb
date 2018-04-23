@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="shortcut icon" href="logo__4__o32_icon.ico" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+<style>
+ .navbar {
+      background-color: transparent;
+    }
+    .scrolling-navbar {
+    	/**/
+      transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+       background: linear-gradient(45deg, rgba(82,174,255,1) 0%, rgba(53,253,183,1) 100%)!important;
+    }
+    footer.page-footer {
+      background-color: #667490;
+    }
+    @media only screen and (max-width: 768px) {
+      .navbar {
+        background: linear-gradient(45deg, rgba(82,174,255,1) 0%, rgba(53,253,183,1) 100%);
+	
+      }
+    }
+body{
+	overflow-y:hidden; 
+	
+	 color:white;
+}
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url("http://i.huffpost.com/gen/1930997/images/o-HOSPITAL-facebook.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      	animation: zoomin 15s ease-in infinite ;
+  transition: all 2s ease-in-out;
+
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url("http://www.uphs.upenn.edu/emergency-medicine/images/patients/HUP_Triage_future.JPG");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      animation: zoomin 15s ease-in infinite ;
+  transition: all 2s ease-in-out;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3f/FEMA_-_18213_-_Photograph_by_Robert_Kaufmann_taken_on_10-25-2005_in_Louisiana.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      animation: zoomin 15s ease-in infinite ;
+  transition: all 2s ease-in-out;
+    }
+   .carousel-item:hover {
+ 
+}
+
+ @keyframes zoomin {
+   0% {transform: scale(1);}
+   25% {transform: scale(1.05);
+   }
+   50% {transform: scale(1.1);
+   }
+   75% {transform: scale(1.05);
+   }
+   100% {transform: scale(1);}
+ }
+    .navbar-dark{
+    	
+    }
+
+
+    .preloader{
+    	position:fixed;
+    	width:100%;
+        height:100%;
+        background:white;
+        top:0px;
+        left:0px;
+        z-index: 9000;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    .loader{
+    	width: 200px;
+    	height:100px;
+    	border:1 px solid red;
+    	position: relative;
+    }
+    .loader:after{
+    	content: "LOADING";
+    	position: absolute;
+    	bottom:-30px;;
+    	left:0;
+    	font-size:20px;
+    	letter-spacing: .1em;
+    	width: 100%;
+    	text-align:center;
+    	color:white;
+    }
+.grad{
+	 background: linear-gradient(45deg, rgba(82,174,255,1) 0%, rgba(53,253,183,1) 100%);
+	 color:white;
+	 
+}
+.back{
+	 background-image: url("http://210.211.97.114:84/appimages/images/contents/e/c/ecg-vector-free0.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color:white !important;
+      background-position: center center;
+
+}
+  .modal-header,.modal-footer{
+  	border:none !important;}
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+    opacity: 0.6; /* Firefox */
+}
+
+  </style>
+
+</head>
+<body>
+
+	<div class="preloader">
+		<div class="loader">
+		<center><img src="text-animation-1s-280x100px.gif"></center>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".loader").delay(300).fadeOut();
+			$(".preloader").delay(200).fadeOut("slow");
+			$("body").delay(420).css({"overflow":"visible"});
+		});
+
+	</script>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark  scrolling-navbar fixed-top">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><img class="navbar-brand img-responsive  " id="12" src="logo (4).png" style=" height:50px; width:100px;">
+    </a><h1 class=" navbar-brand font-weight-bold white-text"> Divine Hospital</h1>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto pr-5">
+           <li class="nav-item ">
+        <a class="nav-link active " href="#" >Home </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link  " role="button"  data-toggle="modal" data-target="#model1">Make a Appointment </a>
+      </li>
+      <li class="nav-item  ">
+        <a class="nav-link" role="button"  data-toggle="modal" data-target="#model2"> Emergency </a>
+      </li>
+      <li class="nav-item ">
+       <a class="nav-link" href="about.html" >About </a>
+      </li>
+	  <li class="nav-item ">
+       <a class="nav-link" role="button"  data-toggle="modal" data-target="#model4">Login </a>
+      </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+            <div class="md-form mt-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+        </form>
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+<!--Carousel Wrapper-->
+  <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+         <div class="full-bg-img flex-center mask rgba-black-strong pattern-6 white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled">
+              <li>
+                <h1 class="font-weight-bold text-uppercase"><q>We Care Like A Family</q></h1>
+              </li>
+              <li>
+                <p class="font-weight-bold text-uppercase py-4">Last Beat Is not Final Beat!</p>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-unique btn-lg btn-rounded mr-0">How!</a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-cyan btn-lg btn-rounded ml-0">Know Us!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide -->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-black-strong white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled">
+              <li>
+                <h1 class="font-weight-bold text-uppercase"><q>We Understand The Emotion </q></h1>
+              </li>
+              <li>
+                <p class="font-weight-bold text-uppercase py-4">High Class Waiting Areas</p>
+              </li>
+              <li>
+                <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn grad btn-rounded btn-lg">Look it</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Second slide -->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-blue-strong white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled">
+              <li>
+                <h1 class="font-weight-bold text-uppercase"><q>Emergency Is Our Priority</q></h1></li>
+              <li>
+                <p class="font-weight-bold text-uppercase py-4">Our Promise To Ward and ICU Availability</p>
+              </li>
+              <li>
+                <a target="_blank" href="https://mdbootstrap.com/forums/forum/support/" class="btn btn-lg btn-indigo btn-rounded">Services!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+
+<div class="modal fade" id="model1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content back ">
+            <div class="modal-header grad  pt-5 text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Make Appointment Form</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="mask pattern-1 rgba-black-strong">
+            <div class="modal-body mx-3">
+                <div class="md-form mb-4">
+                    <i class="fa fa-user prefix white-text"></i>
+                    <input type="text" id="form3" class="form-control validate" placeholder="Name" required>
+                    
+                </div>
+
+                <div class="md-form mb-4">
+                    <i class="fa fa-envelope prefix white-text"></i>
+                    <input type="email" id="form2" class="form-control validate" placeholder="Email">
+                    
+                </div>
+                <div class="md-form mb-4">
+                    <i class="fa fa-mobile-phone prefix white-text pl-2"></i>
+                    <input class="form-control validate" id="form3" type="number" placeholder="mobile/phone"  pattern="^[0-9]" title='Only Number' name="usercontact">
+                </div>
+                <b><p>sex of patients (field is for only reference) </p></b>
+  <label class="radio-inline"><input type="radio" name="g1" value="male"> <i class="fa fa-male" aria-hidden="true"></i>  Male</label>
+<label class="radio-inline"><input type="radio" name="g1" value="female"> <i class="fa fa-female" aria-hidden="true"></i> Female</label>
+<p>symptoms Description </p>
+<textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="3"></textarea>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn grad">Make Appointment <i class="fa fa-calendar-check-o" ></i></button>
+            </div></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="model4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+
+<div class="container">
+<div class="jumbotron ">
+<div class="container ">
+<h1  class="text-center" style="font-family:tahoma;color:black;">OUR PATIENTS SERVICES</h1>
+
+<p style="color:grey; font-family:tahoma; font-size:20px;">Our hospital has over 5 decades of expertise in treating patients in main areas of healthcare, including:  cardiac care, orthopaedics, acute neurological rehabilitation, gynaecology neurosurgery, spinal surgery,and cancer care.,</p>
+<center>
+<a href="services.html" class="btn  grad" role="button"> Read More </a></center>
+
+</div></div>
+
+<div class="jumbotron ">
+<div class="container ">
+<h1  class="text-center" style="font-family:tahoma;color:black;">OUR PATIENTS SERVICES</h1>
+
+<p style="color:grey; font-family:tahoma; font-size:20px;">Our hospital has over 5 decades of expertise in treating patients in main areas of healthcare, including:  cardiac care, orthopaedics, acute neurological rehabilitation, gynaecology neurosurgery, spinal surgery,and cancer care.,</p>
+<center>
+<a href="services.html" class="btn  grad" role="button"> Read More </a></center>
+
+</div>
+</div>
+</div>
+<p>Use data attributes to easily control the position of the carousel. data-slide accepts the keywords prev or next, which alters the slide position relative to its current position. Alternatively, use data-slide-to to pass a raw slide index to the carousel data-slide-to="2", which shifts the slide position to a particular index beginning with 0.
+
+The data-ride="carousel" attribute is used to mark a carousel as animating starting at page load. It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.</p>
+
+
+
+</body>
+</html>
