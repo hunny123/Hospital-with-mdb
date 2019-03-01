@@ -246,9 +246,12 @@
 	<path class="st24" d="M45,274.7h81c13.4,0,24.2-8.2,24.2-18.3l0,0c0-10.1-10.8-18.3-24.2-18.3H45c-13.4,0-24.2,8.2-24.2,18.3l0,0
 		C20.9,266.5,31.7,274.7,45,274.7z"/>
 </g>
-<a href="/hospitl/index.html#about" target="_top">
+<a>
 	<text transform="matrix(1 -7.521224e-04 7.521224e-04 1 44.9699 260.4919)" class="st14 st25 st26"> Know More</text>
 </a>
 <rect x="20.8" y="114.5" class="st11" width="200.4" height="112.9"/>
-<text transform="matrix(0.7723 0 0 1 25.1694 133.2261)"><tspan x="0" y="0" class="st27 st28 st29">From the moment you arrive</tspan><tspan x="0" y="28.9" class="st27 st28 st29">at Divine Hospital,we&apos;ll</tspan><tspan x="0" y="57.9" class="st27 st28 st29">ensure the standard of</tspan><tspan x="0" y="86.8" class="st27 st28 st29">care your eceive is exceptional.</tspan></text>
+<text transform="matrix(0.7723 0 0 1 25.1689 133.2261)" class="st27 st28 st29">From the moment you arrive</text>
+<text transform="matrix(0.7723 0 0 1 25.1689 162.126)" class="st27 st28 st29">at Divine Hospital,we&apos;ll</text>
+<text transform="matrix(0.7723 0 0 1 25.1689 191.126)" class="st27 st28 st29">ensure the standard of</text>
+<text transform="matrix(0.7723 0 0 1 25.1689 220.0264)" class="st27 st28 st29">care you receive is exceptional.</text>
 </svg>
