@@ -77,17 +77,36 @@ height:30px;
 
 .margin-down{
 	margin-top: 80px;
-}  
+} 
+.position-control{
+	position:fixed;
+    width:100%;
+    margin:0;
+    top: 0;
+    z-index: 1020;
+    background-color: white;
+} 
+@media only screen and (min-width: 761px) {
+  .position-control {
+    position: sticky;
+    
+	background-color: transparent;
+    top: 0;
+  }
+}
 </style>
 <body>
 	<div class=" big ">
 		
-		<nav class="navbar noshadow navbar-expand-lg navbar-light sticky-top scrolling-navbar smooth-scroll ">
-  <a class="navbar-brand" href="#">
-    <img src="svg/logo.svg" height="80" alt="logo" class="l1 ml-1 d-sm-none d-lg-inline-block d-md-inline-block d-none ">
-    <img src="svg/name.svg" height="50" alt="logo" class=" l2 ml-1 d-sm-none d-lg-inline-block d-none d-md-inline-block">
+<nav class="navbar noshadow navbar-expand-lg navbar-light position-control scrolling-navbar  ">
+  <a class="navbar-brand " href="#" style="margin-left: 7%">
+    <img src="svg/logo.svg" height="80" alt="logo" class="l1  d-sm-none d-lg-inline-block d-md-inline-block d-none  " >
+    
     <img src="svg/logo.svg" height="30" alt="logo" class=" d-inline-block d-lg-none d-md-none ">
-    <img src="svg/name.svg" height="20" alt="logo" class=" d-inline-block d-lg-none d-md-none ">
+</a>
+<a class="navbar-brand mt-2 " href="#">
+    <object data="svg/name.svg" type="image/svg+xml" height="50" alt="logo" class=" l2  d-sm-none d-lg-inline-block d-none ml-3 d-md-inline-block"></object>
+    <object data="svg/name.svg" type="image/svg+xml" height="20" alt="logo" class=" d-inline-block d-lg-none d-md-none "></object>
   </a>
   <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Toggle navigation">
@@ -128,7 +147,7 @@ height:30px;
    			</object>
 
    		</div>
-   		<div class="col-md-5 mt-2 bg-white d-lg-none d-sm-block mt-5  d-md-none">
+   		<div class="col-md-5 mt-2 bg-white d-lg-none d-sm-block  d-md-none">
    			<object data="svg/message.svg" type="image/svg+xml" class="embed-responsive-item mt-3 pb-5">
    				
    			</object>
@@ -139,15 +158,22 @@ height:30px;
    		</div>
 
 	</div></div></div>
-	<div class="container-fluid px-1 py-4 grey lighten-5 ">
-		<div class="row mx-4">
-			<div class="col-lg-4 mt-5 ml-5">
-				<p class="bigFront py-4 pink-text">Who<br> We Are</p>
-				<p class="smallFront ">Our hospital has over 5 decades of expertise in treating patients in main areas of healthcare, including: cardiac care, orthopaedics, acute neurological rehabilitation, gynaecology neurosurgery, spinal surgery,and cancer care.</p>
-                <a class="btn px-5 btn-rounded white-text btn-pink mt-5 "  role="button"href="#contact">Contact Us</a>
+	
+	<div class="container-fluid py-4 grey lighten-5 ">
+		<div class="row   mt-4">
+			<div class="col-lg-1 d-none d-lg-block pl-2">
 			</div>
-			<div class="col-lg-6 ml-5 mt-5">
-				<div class="row">
+			
+			<div class="col-lg-3 mx-2 mt-5 ">
+
+				<p class="bigFront py-4  pink-text">Who<br> We Are</p>
+				<p class="smallFront ml-1 ">Our hospital has over 5 decades of expertise in treating patients in main areas of healthcare, including: cardiac care, orthopaedics, acute neurological rehabilitation, gynaecology neurosurgery, spinal surgery,and cancer care.</p>
+                <a class="btn px-5 btn-rounded white-text btn-pink mt-5 d-none d-lg-inline-block  "  role="button"href="#contact">Contact Us</a>
+			</div>
+			<div class="col-lg-1 d-none d-lg-block pl-2">
+			</div>
+			<div class="col-lg-6 ml-2 mt-5">
+				<div class="row pl-1">
 					<div class="col-md-6">
 							<img src="svg/service1.png"  class="my-4"alt="">
 							<h3>Medical Treatment</h3>
@@ -171,8 +197,9 @@ height:30px;
 
 				
 			</div>
-		</div>
 
+		</div>
+           <a class="btn px-5 btn-rounded white-text btn-pink mt-5 ml-5 d-lg-none "  role="button"href="#contact">Contact Us</a>
 	</div>
 </body>
 
