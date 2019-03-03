@@ -77,15 +77,31 @@ height:30px;
 
 .margin-down{
 	margin-top: 80px;
-}  
+} 
+.position-control{
+	position:fixed;
+    width:100%;
+    margin:0;
+    top: 0;
+    z-index: 1020;
+    background-color: white;
+} 
+@media only screen and (min-width: 761px) {
+  .position-control {
+    position: sticky;
+    
+	background-color: transparent;
+    top: 0;
+  }
+}
 </style>
 <body>
 	<div class=" big ">
 		
-		<nav class="navbar noshadow navbar-expand-lg navbar-light sticky-top scrolling-navbar smooth-scroll ">
+<nav class="navbar noshadow navbar-expand-lg navbar-light position-control scrolling-navbar  ">
   <a class="navbar-brand" href="#">
-    <img src="svg/logo.svg" height="80" alt="logo" class="l1 ml-1 d-sm-none d-lg-inline-block d-md-inline-block d-none ">
-    <img src="svg/name.svg" height="50" alt="logo" class=" l2 ml-1 d-sm-none d-lg-inline-block d-none d-md-inline-block">
+    <img src="svg/logo.svg" height="80" alt="logo" class="l1  d-sm-none d-lg-inline-block d-md-inline-block d-none " style="margin-left: 25%">
+    <img src="svg/name.svg" height="50" alt="logo" class=" l2  d-sm-none d-lg-inline-block d-none d-md-inline-block">
     <img src="svg/logo.svg" height="30" alt="logo" class=" d-inline-block d-lg-none d-md-none ">
     <img src="svg/name.svg" height="20" alt="logo" class=" d-inline-block d-lg-none d-md-none ">
   </a>
@@ -128,7 +144,7 @@ height:30px;
    			</object>
 
    		</div>
-   		<div class="col-md-5 mt-2 bg-white d-lg-none d-sm-block mt-5  d-md-none">
+   		<div class="col-md-5 mt-2 bg-white d-lg-none d-sm-block  d-md-none">
    			<object data="svg/message.svg" type="image/svg+xml" class="embed-responsive-item mt-3 pb-5">
    				
    			</object>
